@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div id="page-wrapper">
+
+        <!-- CONTENEDOR DEL HEADER INCLUYE LOGO Y MENU-->
+        <header id="header">
+            
+            <!-- CONTENDOR DEL LOGO -->
+            <div class="logo">
+                <img id="header-img"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                    alt="original trombones logo" />
+            </div>
+            <!-- CONTENEDOR DEL MENU -->
+            <nav id="nav-bar">
+                <!-- MENU PRINCIPAL -->
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header> <!-- FIN DEL HEADER -->
+
+        <div class="container"></div> <!-- PARA QUE ES ESTE CONTENEDOR VACIO? -->
+
+        <!-- INICIO (TOP) DE LA SECCION -->
+        <section id="hero">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <!-- FORMULARIO -->
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+                <input id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+        </section>
+
+        <!-- CONTENEDOR DE LAS PAGINAS -->
+        <div class="container">
+            <!-- CONTENEDOR DE LA PAGINA FEATURES -->
+            <section id="features">
+                <!-- DIVISION USANDO GRID POR CADA ICONO (ICONO FUEGO) -->
+                <div class="grid">
+                    <!-- DIV PARA EL ICONO -->
+                    <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                    <!-- DIV PARA LA DESCRIPCION -->
+                    <div class="desc">
+                        <h2>Premium Materials</h2>
+                        <p>
+                            Our trombones use the shiniest brass which is sourced locally.
+                            This will increase the longevity of your purchase.
+                        </p>
+                    </div> <!-- FIN DEL DIV PARA LA DESCRIPCION -->
+                </div> <!-- FIN DE GRID DEL ICONO FUEGO -->
+
+                <!-- DIVISION USANDO GRID POR CADA ICONO (ICONO CAMION) -->
+                <div class="grid">
+                    <!-- DIV PARA EL ICONO -->
+                    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+                    <!-- DIV PARA LA DESCRIPCION -->
+                    <div class="desc">
+                        <h2>Fast Shipping</h2>
+                        <p>
+                            We make sure you recieve your trombone as soon as we have
+                            finished making it. We also provide free returns if you are not
+                            satisfied.
+                        </p>
+                    </div> <!-- FIN DEL DIV PARA LA DESCRIPCION -->
+                </div> <!-- FIN DE GRID DEL ICONO TRUCK -->
+
+                <!-- DIVISION USANDO GRID POR CADA ICONO (ICONO FUEGO) -->
+                <div class="grid">
+                    <div class="icon"> <!-- DIV PARA EL ICONO -->
+                        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                    </div> <!-- FIN DEL DIV PARA EL ICONO -->
+                    <div class="desc"> <!-- DIV PARA LA DESCRIPCION -->
+                        <h2>Quality Assurance</h2>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages
+                            or faults and we will check and test the pitch of your
+                            instrument.
+                        </p>
+                    </div> <!-- FIN DE DIV PARA LA DESCRIPCION -->
+                </div> <!-- FIN DE GRID DEL ICONO BATTERY -->
+            </section> <!-- FIN DE LA SECCIÓN FEATURE  -->
+
+            <section id="how-it-works"> <!-- CONTENEDOR DE LA PAGINA HOW IT WORKS -->
+                <!-- INCORPORACION DE UN VIDEO DE YOUTUBE USANDO IFRAME -->
+                <iframe id="video" height="315"
+                    src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                    frameborder="0" allowfullscreen></iframe>
+                <!-- INCORPORACION DE UN VIDEO DE YOUTUBE USANDO IFRAME -->
+            </section> <!-- FIN DE LA PAGINA HOW IT WORKS  -->
+
+            <section id="pricing"> <!-- INICIO DE LA PAGINA PRICING  -->
+                <div class="product" id="tenor">
+                    <!-- DIV PARA LA PRIMERA CARD | LAS CARDS TIENEN UNA MISMA CLASE Y UNA INDIVIDUAL -->
+                    <div class="level">Tenor Trombone</div>
+                    <!-- TITULO DE LA CARD | TODOS LOS TITULOS TIENEN UNA MISMA CLASE -->
+                    <h2>$600</h2> <!-- CONTENIDO DE LA CARD  -->
+                    <ol> <!-- LISTA DE CONTENIDO DE LA CARD  -->
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button> <!-- BOTON-CARD1  -->
+                </div> <!-- FIN DE LA PRIMER CARD   -->
+
+                <div class="product" id="bass"> <!-- DIV PARA LA CARD2  -->
+                    <div class="level">Bass Trombone</div> <!-- DIV PARA EL TITULO DE LA CARD 2  -->
+                    <h2>$900</h2> <!-- CONTENIDO DE LA CARD2  -->
+                    <ol> <!-- LISTA DE CONTENIDO DE LA CARD2  -->
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol> <!-- FIN LISTA DE CONTENIDO DE LA CARD  -->
+                    <button class="btn">Select</button> <!-- BOTON-CARD2  -->
+                </div> <!-- FIN DE CARD2   -->
+
+                <div class="product" id="valve"> <!-- DIV PARA LA CARD3  -->
+                    <div class="level">Valve Trombone</div> <!-- DIV PARA EL TITULO DE LA CARD 3  -->
+                    <h2>$1200</h2> <!-- CONTENIDO DE LA CARD3  -->
+                    <ol> <!-- LISTA DE CONTENIDO DE LA CARD3  -->
+                        <li>Plays similar to a Trumpet</li>
+                        <li>Great for Jazz Bands</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol> <!-- LISTA DE CONTENIDO DE LA CARD3  -->
+                    <button class="btn">Select</button> <!-- BOTON-CARD3  -->
+                </div> <!-- FIN DE CARD2   -->
+            </section> <!-- FIN DE LA  PAGINA  PRICING  -->
+
+            <footer> <!-- FOOTER -->
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span>Copyright 2016, Original Trombones</span>
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

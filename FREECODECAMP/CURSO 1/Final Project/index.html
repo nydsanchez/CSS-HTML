@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <form action="">
+            <div class="info-gral">
+                <label class="lb-input-select" for="name">Name</label>
+                <input class="input-select-form" id="name" name="name" type="text">
+                
+                <label class="lb-input-select"for="email">Email</label>
+                <input class="input-select-form" id="email" name="email" type="email">
+                
+                <label class="lb-input-select"for="age">Age(optional)</label>
+                <input class="input-select-form" id="age" name="age" type="number" min="10" max="99">
+                
+            </div>
+            <div class="caja" id="ocupacion">
+                <label class="lb-input-select"for="rol">Which option best describes your current role?</label>
+                <select class="input-select-form" name="rol" id="rol">
+                <option value="">Select current rol</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer no to say</option>
+                <option value="5">Other</option>
+                </select>
+            </div>
+            <div class="opt">
+                <p class="lb-input-select">Would you recommend freeCodeCamp to a friend?</p>
+                <label class="label-opt-ckbx"for="si"> <input id="si" name="recommend" type="radio" class="inline"> Definitely</label>
+                <label class="label-opt-ckbx"for="maybe"> <input id="maybe" name="recommend" type="radio" class="inline"> Maybe</label>
+                <label class="label-opt-ckbx"for="notsure"> <input id="notsure" name="recommend" type="radio" class="inline"> Not sure</label>
+            </div>
+            <div class="caja" id="fav-feature">
+                <label class="lb-input-select"for="feature">What is your favorite feature of freeCodeCamp?</label>
+                <select class="input-select-form" name="feature" id="feature">
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+                </select>
+            </div>
+            <div class="ckbx">
+                <p class="lb-input-select"> What would you like to see improved? (Check all that apply)</p>
+                
+                <label class="label-opt-ckbx" for="front-end-pj"> <input id="front-end-pj" name="" type="checkbox" class="inline"> Front-end Projects</label>
+                <label class="label-opt-ckbx" for=""><input id="" name="" type="checkbox" class="inline"> Back-end Projects</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Data Visualization</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Challenges</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Open Source Community</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Gitter help rooms</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Videos</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> City Meetups</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Wiki</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Forum</label>
+                <label class="label-opt-ckbx"for=""> <input id="" name="" type="checkbox" class="inline"> Additional Courses</label>
+            </div>
+            <div class="caja">
+            <label class="lb-input-select"for="">Any comments or suggestions?</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            <input type="submit"  value="Submit">
+</div>
+        </form>
+
+    </div>
+</body>
+
+</html>

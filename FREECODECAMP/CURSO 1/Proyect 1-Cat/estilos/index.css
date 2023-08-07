@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: rgb(238, 238, 238);
+}
+.container{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+}
+h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+header{
+   display: flex;
+   
+   margin: 20px 10px;
+}
+.logo{
+    width: 60vw; /* ancho del 60% o 60 viewport width*/
+}
+
+.logo > img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: space-between;
+}

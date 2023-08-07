@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: serif;
+    color: black;
+    background-color: aqua;
+}
+
+.container{
+    background-color: rgb(255,255,255);
+    padding: 10px 0;
+     
+}
+.marker{
+    
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+    /* box-shadow: 5px 5px red; LADO OPUESTO DEL QUE ESTA ABAJO */
+    box-shadow: -5px -5px red; /*LA SOMBRA ES SOLIDA - MUY FEA, HAY QUE USAR UN TERCER ARGUMENTO EN PX*/
+}
+.one{
+   /* linear-gradient(gradientDirection, color1, color2, ...,colorN);*/
+/* background: linear-gradient(90deg, rgb(255,0,0) 75%, rgb(0,255,0), rgb(0,0,255));  EL GRADIENT SE HACE VERTICAL POR EL GRADO 90*/
+   
+/*background: linear-gradient(180deg, rgb(255,0,0) 0%, rgb(0,255,0) 50%, rgb(0,0,255) 100%);  /*EL GRADIENT SE HACE HORIZONTAL POR EL GRAO 180
+EL VALOR DESPUES DEL RGB EN % ES UN COLOR STOP*/
+
+/*ME ENCANTE ESTE background: linear-gradient(180deg, rgb(122, 0, 0) 0%, rgb(0, 74, 0) 50%, rgb(0, 0, 14) 100%);*/
+    /* Color-stops allow you to fine-tune where colors are placed along the gradient line 
+    EJEMPLO linear-gradient(90deg, red 90%, black);*/
+
+   /*  background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(0, 0, 255) 100%); */
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.second{
+   /*  background:rgb(0,127,0);
+
+    f no gradientDirection argument is provided to the linear-gradient function, 
+    it arranges colors from top to bottom, or along a 180 degree line, by default. */
+    background: linear-gradient(180deg, #55680D, #71F53E, #116C31);
+   /*  box-shadow: 5px 5px 5px green;
+    box-shadow: 0px 0px 20px 0 green; */
+    box-shadow: 0 0 20px 0 #3b7e20CC;
+}
+
+.third{
+   /*  background: rgb(0,0,255); */
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+
+    /* box-shadow: offsetX offsetY blurRadius spreadRadius color; 
+    1ER Y 2DO ELEMENTO ESTABLECE DONDE SERA LA SOMBRA
+    EL 3ER ELEMENTO HACE QUE LA SOMBRA SEA DIFUMINADA
+    EL 4TO ELEMENTO ES OPCIONAL PARA SABER QUE TAN GRANDE SERA LA SOMBRA - CUANDO SE APLICA LA SOMBRA ESTA EN TODA LA CAJA
+    EL 5TO ELEMENTO (PUEDE SER EL 4TO POR LO DE ARRIBA) DA UN COLOR A LA SOMBRA */
+
+    /* box-shadow: 0px 0px 20px 0 blue; */
+    box-shadow: 0 0 20px 0 hsla(223, 56%, 31%, 0.8);
+}
+
+.cap, .sleeve{
+    display: inline-block
+  }
+
+.sleeve{
+    width: 110px;
+  height: 25px;
+ /* background: white;
+  opacity:0.5; Opacity describes how opaque, or non-transparent, something is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.*/
+  background-color: rgba(255, 255, 255,50%); /*ESTA ES OTRA FORMA DE COMBINAR BACKGROUND Y OPACITY*/
+  border-left: 10px double rgba(0,0,0,75%);
+}
+
+.cap   {
+    width: 110px;
+  height: 25px;
+  background-color: ; 
+}
+
+
+/* The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax:
+box-shadow: offsetX offsetY color; 
+
+1. both offsetX and offsetY accept number values in px and other CSS units
+2. a positive offsetX value moves the shadow right and a negative value moves it left
+3. a positive offsetY value moves the shadow down and a negative value moves it up
+4. if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change*/
+
+/* colores primarios 
+color           RGB          HEXA           HSL
+rojo:       255, 255, 0     #FFFF0
+verde:      0, 255, 255     #00FFFF
+azul:       255, 0, 255     #FF00FF     240, 100%, 50%
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F*/
+
+
+/* colores secundario: es la combinación de los colores primarios 
+amarillo: 255, 255, 0 
+cyan:     0, 255, 255
+magenta:  255, 0, 255 */
+
+
+/* Los colores terciarios se crean combinando un color primario con un color secundario cercano. 
+orange          : 255, 127,0
+spring green    : 0, 255, 127
+violet          : 127, 0, 255
+chartreuse green: 127, 255, 0
+azure           : 0, 127, 255
+rose            : 255, 0, 127*/
+
+/* Two colors that are opposite from each other on the color wheel are called complementary colors.
+ If two complementary colors are combined, they produce gray. But when they are placed side-by-side, 
+ these colors produce strong visual contrast and appear brighter. 
+
+ 255, 0, 0 is side by 0, 255, 255  ambos colores son brillantes y puede no ser beneficioso usarlos en un sitio al mismo tiempo
+
+*/
+
+
+/* HSL (Hue, Saturation, and Lightness) COLOR 
+H= 0 to 360
+S= 0 to 100% 
+L= 0 to 100%*/
+
+/* A gradient is when one color transitions into another 
+linear-gradient  control the direction of the transition along a line, and which colors are used
+linear-gradient(gradientDirection, color1, color2, ...);*/
